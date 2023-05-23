@@ -77,10 +77,10 @@ const Home = () => {
                             </button>
                             <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div className="navbar-nav py-0">
-                                    <a href="index.html" className="nav-item nav-link active">Home</a>
-                                    <a href="about.html" className="nav-item nav-link">About</a>
-                                    <a href="course.html" className="nav-item nav-link">Courses</a>
-                                    <a href="teacher.html" className="nav-item nav-link">Teachers</a>
+                                    <a href="/" className="nav-item nav-link active">Home</a>
+                                    <a href="about" className="nav-item nav-link">About</a>
+                                    <a href="course" className="nav-item nav-link">Courses</a>
+                                    <a href="teacher" className="nav-item nav-link">Teachers</a>
                                     <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                         <div className="dropdown-menu rounded-0 m-0">
