@@ -1,12 +1,18 @@
 import React from "react";
-import Home from "./pages/home.js";
+import Home from "./pages/Home.js";
+
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Home />
+    <div>
+      <main>
+        <Outlet/>
+      </main>
+      </div>
     </>
   );
 }
 
-export default App;
+export default App
