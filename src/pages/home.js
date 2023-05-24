@@ -84,11 +84,11 @@ const Home = () => {
                                     <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                         <div className="dropdown-menu rounded-0 m-0">
-                                            <a href="blog.html" className="dropdown-item">Blog List</a>
-                                            <a href="single.html" className="dropdown-item">Blog Detail</a>
+                                            <a href="blog" className="dropdown-item">Blog List</a>
+                                            <a href="single" className="dropdown-item">Blog Detail</a>
                                         </div>
                                     </div>
-                                    <a href="contact.html" className="nav-item nav-link">Contact</a>
+                                    <a href="contact" className="nav-item nav-link">Contact</a>
                                 </div>
                                 <a className="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                             </div>
