@@ -78,18 +78,18 @@ const Single = () => {
                             </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav py-0">
-                                    <a href="index.html" class="nav-item nav-link">Home</a>
-                                    <a href="about.html" class="nav-item nav-link">About</a>
-                                    <a href="course.html" class="nav-item nav-link">Courses</a>
-                                    <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                                    <a href="/" class="nav-item nav-link">Home</a>
+                                    <a href="about" class="nav-item nav-link">About</a>
+                                    <a href="course" class="nav-item nav-link">Courses</a>
+                                    <a href="teacher" class="nav-item nav-link">Teachers</a>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Blog</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                            <a href="single.html" class="dropdown-item active">Blog Detail</a>
+                                            <a href="blog" class="dropdown-item">Blog Grid</a>
+                                            <a href="single" class="dropdown-item active">Blog Detail</a>
                                         </div>
                                     </div>
-                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                    <a href="contact" class="nav-item nav-link">Contact</a>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                             </div>

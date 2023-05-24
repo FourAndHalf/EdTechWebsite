@@ -1,5 +1,34 @@
 import React from 'react'
 
+import carousalImage_1 from '../img/carousel-1.jpg'
+import carousalImage_2 from '../img/carousel-2.jpg'
+import carousalImage_3 from '../img/carousel-3.jpg'
+import about from '../img/about.jpg'
+import cat_1 from '../img/cat-1.jpg'
+import cat_2 from '../img/cat-2.jpg'
+import cat_3 from '../img/cat-3.jpg'
+import cat_4 from '../img/cat-4.jpg'
+import cat_5 from '../img/cat-5.jpg'
+import cat_6 from '../img/cat-6.jpg'
+import cat_7 from '../img/cat-7.jpg'
+import cat_8 from '../img/cat-8.jpg'
+import course_1 from '../img/course-1.jpg'
+import course_2 from '../img/course-2.jpg'
+import course_3 from '../img/course-3.jpg'
+import course_4 from '../img/course-4.jpg'
+import course_5 from '../img/course-5.jpg'
+import course_6 from '../img/course-6.jpg'
+import team_1 from '../img/team-1.jpg'
+import team_2 from '../img/team-2.jpg'
+import team_3 from '../img/team-3.jpg'
+import team_4 from '../img/team-4.jpg'
+import testimonial_1 from '../img/testimonial-1.jpg'
+import testimonial_2 from '../img/testimonial-2.jpg'
+import testimonial_3 from '../img/testimonial-3.jpg'
+import blog_1 from '../img/blog-1.jpg'
+import blog_2 from '../img/blog-2.jpg'
+import blog_3 from '../img/blog-3.jpg'
+
 const Home = () => {
   return (
     <>
@@ -108,7 +137,7 @@ const Home = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active" style={{minHeight: '300px'}}>
-                            <img className="position-relative w-100" src="../../img/carousel-1.jpg" style={{minHeight: '300px', objectFit: 'cover'}} />
+                            <img className="position-relative w-100" src={carousalImage_1} style={{minHeight: '300px', objectFit: 'cover'}} />
                             <div className="carousel-caption d-flex align-items-center justify-content-center">
                                 <div className="p-5" style={{width: '100%', maxWidth: '900px'}}>
                                     <h5 className="text-white text-uppercase mb-md-3">Best Online Courses</h5>
@@ -118,7 +147,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="carousel-item" style={{minHeight: '300px'}}>
-                            <img className="position-relative w-100" src="../img/carousel-2.jpg" style={{minHeight: '300px', objectFit: 'cover'}} />
+                            <img className="position-relative w-100" src={carousalImage_2} style={{minHeight: '300px', objectFit: 'cover'}} />
                             <div className="carousel-caption d-flex align-items-center justify-content-center">
                                 <div className="p-5" style={{width: '100%', maxWidth: '900px'}}>
                                     <h5 className="text-white text-uppercase mb-md-3">Best Online Courses</h5>
@@ -128,7 +157,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="carousel-item" style={{minHeight: '300px'}}>
-                            <img className="position-relative w-100" src="../img/carousel-3.jpg" style={{minHeight: '300px', objectFit: 'cover'}} />
+                            <img className="position-relative w-100" src={carousalImage_3} style={{minHeight: '300px', objectFit: 'cover'}} />
                             <div className="carousel-caption d-flex align-items-center justify-content-center">
                                 <div className="p-5" style={{width: '100%', maxWidth: '900px'}}>
                                     <h5 className="text-white text-uppercase mb-md-3">Best Online Courses</h5>
@@ -147,7 +176,7 @@ const Home = () => {
                 <div className="container py-5">
                     <div className="row align-items-center">
                         <div className="col-lg-5">
-                            <img className="img-fluid rounded mb-4 mb-lg-0" src="../img/about.jpg" alt="" />
+                            <img className="img-fluid rounded mb-4 mb-lg-0" src={about} alt="" />
                         </div>
                         <div className="col-lg-7">
                             <div className="text-left mb-4">
@@ -173,7 +202,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-1.jpg" alt="" />
+                                <img className="img-fluid" src={cat_1} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">Web Design</h4>
                                     <span>100 Courses</span>
@@ -182,7 +211,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-2.jpg" alt="" />
+                                <img className="img-fluid" src={cat_2} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">Development</h4>
                                     <span>100 Courses</span>
@@ -191,7 +220,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-3.jpg" alt="" />
+                                <img className="img-fluid" src={cat_3} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">Game Design</h4>
                                     <span>100 Courses</span>
@@ -200,7 +229,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-4.jpg" alt="" />
+                                <img className="img-fluid" src={cat_4} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">Apps Design</h4>
                                     <span>100 Courses</span>
@@ -209,7 +238,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-5.jpg" alt="" />
+                                <img className="img-fluid" src={cat_5} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">Marketing</h4>
                                     <span>100 Courses</span>
@@ -218,7 +247,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-6.jpg" alt="" />
+                                <img className="img-fluid" src={cat_6} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">Research</h4>
                                     <span>100 Courses</span>
@@ -227,7 +256,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-7.jpg" alt="" />
+                                <img className="img-fluid" src={cat_7} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">Content Writing</h4>
                                     <span>100 Courses</span>
@@ -236,7 +265,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4">
                             <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/cat-8.jpg" alt="" />
+                                <img className="img-fluid" src={cat_8} alt="" />
                                 <a className="cat-overlay text-white text-decoration-none" href="">
                                     <h4 className="text-white font-weight-medium">SEO</h4>
                                     <span>100 Courses</span>
@@ -259,7 +288,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src="img/course-1.jpg" alt="" />
+                                <img className="img-fluid" src={course_1} alt="" />
                                 <div className="bg-secondary p-4">
                                     <div className="d-flex justify-content-between mb-3">
                                         <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -277,7 +306,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src="img/course-2.jpg" alt="" />
+                                <img className="img-fluid" src={course_2} alt="" />
                                 <div className="bg-secondary p-4">
                                     <div className="d-flex justify-content-between mb-3">
                                         <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -295,7 +324,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src="img/course-3.jpg" alt="" />
+                                <img className="img-fluid" src={course_3} alt="" />
                                 <div className="bg-secondary p-4">
                                     <div className="d-flex justify-content-between mb-3">
                                         <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -313,7 +342,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src="../../img/course-4.jpg" alt="" />
+                                <img className="img-fluid" src={course_4} alt="" />
                                 <div className="bg-secondary p-4">
                                     <div className="d-flex justify-content-between mb-3">
                                         <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -331,7 +360,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src="img/course-5.jpg" alt="" />
+                                <img className="img-fluid" src={course_5} alt="" />
                                 <div className="bg-secondary p-4">
                                     <div className="d-flex justify-content-between mb-3">
                                         <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -349,7 +378,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src="img/course-6.jpg" alt="" />
+                                <img className="img-fluid" src={course_6} alt="" />
                                 <div className="bg-secondary p-4">
                                     <div className="d-flex justify-content-between mb-3">
                                         <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -434,7 +463,7 @@ const Home = () => {
                         <div className="col-md-6 col-lg-3 text-center team mb-4">
                             <div className="team-item rounded overflow-hidden mb-2">
                                 <div className="team-img position-relative">
-                                    <img className="img-fluid" src="img/team-1.jpg" alt="" />
+                                    <img className="img-fluid" src={team_1} alt="" />
                                     <div className="team-social">
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
@@ -450,7 +479,7 @@ const Home = () => {
                         <div className="col-md-6 col-lg-3 text-center team mb-4">
                             <div className="team-item rounded overflow-hidden mb-2">
                                 <div className="team-img position-relative">
-                                    <img className="img-fluid" src="img/team-2.jpg" alt="" />
+                                    <img className="img-fluid" src={team_2} alt="" />
                                     <div className="team-social">
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
@@ -466,7 +495,7 @@ const Home = () => {
                         <div className="col-md-6 col-lg-3 text-center team mb-4">
                             <div className="team-item rounded overflow-hidden mb-2">
                                 <div className="team-img position-relative">
-                                    <img className="img-fluid" src="img/team-3.jpg" alt="" />
+                                    <img className="img-fluid" src={team_3} alt="" />
                                     <div className="team-social">
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
@@ -482,7 +511,7 @@ const Home = () => {
                         <div className="col-md-6 col-lg-3 text-center team mb-4">
                             <div className="team-item rounded overflow-hidden mb-2">
                                 <div className="team-img position-relative">
-                                    <img className="img-fluid" src="img/team-4.jpg" alt="" />
+                                    <img className="img-fluid" src={team_4} alt="" />
                                     <div className="team-social">
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
                                         <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
@@ -514,21 +543,21 @@ const Home = () => {
                                 <div className="text-center">
                                     <i className="fa fa-3x fa-quote-left text-primary mb-4"></i>
                                     <h4 className="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img className="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="" />
+                                    <img className="img-fluid mx-auto mb-3" src={testimonial_1} alt="" />
                                     <h5 className="m-0">Client Name</h5>
                                     <span>Profession</span>
                                 </div>
                                 <div className="text-center">
                                     <i className="fa fa-3x fa-quote-left text-primary mb-4"></i>
                                     <h4 className="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img className="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="" />
+                                    <img className="img-fluid mx-auto mb-3" src={testimonial_2} alt="" />
                                     <h5 className="m-0">Client Name</h5>
                                     <span>Profession</span>
                                 </div>
                                 <div className="text-center">
                                     <i className="fa fa-3x fa-quote-left text-primary mb-4"></i>
                                     <h4 className="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img className="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="" />
+                                    <img className="img-fluid mx-auto mb-3" src={testimonial_3} alt="" />
                                     <h5 className="m-0">Client Name</h5>
                                     <span>Profession</span>
                                 </div>
@@ -550,7 +579,7 @@ const Home = () => {
                     <div className="row pb-3">
                         <div className="col-lg-4 mb-4">
                             <div className="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/blog-1.jpg" alt="" />
+                                <img className="img-fluid" src={blog_1} alt="" />
                                 <a className="blog-overlay text-decoration-none" href="">
                                     <h5 className="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                     <p className="text-primary m-0">Jan 01, 2050</p>
@@ -559,7 +588,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/blog-2.jpg" alt="" />
+                                <img className="img-fluid" src={blog_2} alt="" />
                                 <a className="blog-overlay text-decoration-none" href="">
                                     <h5 className="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                     <p className="text-primary m-0">Jan 01, 2050</p>
@@ -568,7 +597,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src="img/blog-3.jpg" alt="" /> 
+                                <img className="img-fluid" src={blog_3} alt="" /> 
                                 <a className="blog-overlay text-decoration-none" href="">
                                     <h5 className="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                     <p className="text-primary m-0">Jan 01, 2050</p>

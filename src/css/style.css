@@ -4115,6 +4115,10 @@ input[type="button"].btn-block {
   justify-content: space-between;
 }
 
+.carousel-item > img {
+  background: url(../img/carousel-1.jpg);
+}
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
