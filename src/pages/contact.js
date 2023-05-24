@@ -3,44 +3,50 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-        {/*  Topbar Start  */}
-            <div class="container-fluid d-none d-lg-block">
-                <div class="row align-items-center py-4 px-xl-5">
-                    <div class="col-lg-3">
-                        <a href="" class="text-decoration-none">
-                            <h1 class="m-0"><span class="text-primary">E</span>COURSES</h1>
+        {/* Topbar Start */}
+            <div className="container-fluid d-none d-lg-block">
+                <div className="row align-items-center py-4 px-xl-5">
+                    <div className="col-lg-3">
+                        <a href="" className="text-decoration-none">
+                            <h1 className="m-0"><span className="text-primary">E</span>COURSES</h1>
                         </a>
                     </div>
-                    <div class="col-lg-3 text-right">
-                        <div class="d-inline-flex align-items-center">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
-                            <div class="text-left">
-                                <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
-                                <small>123 Street, New York, USA</small>
+                    <div className="col-lg-3 text-right">
+                        <a href="https://goo.gl/maps/LCV73H7W8qj7VLiY9" className="text-decoration-none">
+                            <div className="d-inline-flex align-items-center">
+                                <i className="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                                <div className="text-left">
+                                    <h6 className="font-weight-semi-bold mb-1">Our Office</h6>
+                                    <small>123 Street, New York, USA</small>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 text-right">
-                        <div class="d-inline-flex align-items-center">
-                            <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
-                            <div class="text-left">
-                                <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
-                                <small>info@example.com</small>
+                    <div className="col-lg-3 text-right">
+                        <a href="mailto:eduzellTechnologies@gmail.com" className="text-decoration-none">
+                            <div className="d-inline-flex align-items-center">
+                                <i className="fa fa-2x fa-envelope text-primary mr-3"></i>
+                                <div className="text-left">
+                                    <h6 className="font-weight-semi-bold mb-1">Email Us</h6>
+                                    <small>info@example.com</small>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 text-right">
-                        <div class="d-inline-flex align-items-center">
-                            <i class="fa fa-2x fa-phone text-primary mr-3"></i>
-                            <div class="text-left">
-                                <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
-                                <small>+012 345 6789</small>
+                    <div className="col-lg-3 text-right">
+                        <a href="tel:1234567890" className="text-decoration-none">
+                            <div className="d-inline-flex align-items-center">
+                                <i className="fa fa-2x fa-phone text-primary mr-3"></i>
+                                <div className="text-left">
+                                    <h6 className="font-weight-semi-bold mb-1">Call Us</h6>
+                                    <small>+012 345 6789</small>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        {/* <!-- Topbar End --> */}
+        {/* Topbar End */}
 
 
         {/* <!-- Navbar Start --> */}
@@ -78,18 +84,18 @@ const Contact = () => {
                             </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav py-0">
-                                    <a href="index.html" class="nav-item nav-link">Home</a>
-                                    <a href="about.html" class="nav-item nav-link">About</a>
-                                    <a href="course.html" class="nav-item nav-link">Courses</a>
-                                    <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                                    <a href="/" class="nav-item nav-link">Home</a>
+                                    <a href="about" class="nav-item nav-link">About</a>
+                                    <a href="course" class="nav-item nav-link">Courses</a>
+                                    <a href="teacher" class="nav-item nav-link">Teachers</a>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="blog.html" class="dropdown-item">Blog List</a>
-                                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                            <a href="blog" class="dropdown-item">Blog List</a>
+                                            <a href="single" class="dropdown-item">Blog Detail</a>
                                         </div>
                                     </div>
-                                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                                    <a href="contact" class="nav-item nav-link active">Contact</a>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                             </div>

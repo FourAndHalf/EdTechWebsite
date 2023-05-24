@@ -9,55 +9,61 @@ import user from '../img/user.jpg'
 const Blog = () => {
   return (
     <>
-        {/* <!-- Topbar Start --> */}
-            <div class="container-fluid d-none d-lg-block">
-                <div class="row align-items-center py-4 px-xl-5">
-                    <div class="col-lg-3">
-                        <a href="" class="text-decoration-none">
-                            <h1 class="m-0"><span class="text-primary">E</span>COURSES</h1>
+        {/* Topbar Start */}
+        <div className="container-fluid d-none d-lg-block">
+                <div className="row align-items-center py-4 px-xl-5">
+                    <div className="col-lg-3">
+                        <a href="" className="text-decoration-none">
+                            <h1 className="m-0"><span className="text-primary">E</span>COURSES</h1>
                         </a>
                     </div>
-                    <div class="col-lg-3 text-right">
-                        <div class="d-inline-flex align-items-center">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
-                            <div class="text-left">
-                                <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
-                                <small>123 Street, New York, USA</small>
+                    <div className="col-lg-3 text-right">
+                        <a href="https://goo.gl/maps/LCV73H7W8qj7VLiY9" className="text-decoration-none">
+                            <div className="d-inline-flex align-items-center">
+                                <i className="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                                <div className="text-left">
+                                    <h6 className="font-weight-semi-bold mb-1">Our Office</h6>
+                                    <small>123 Street, New York, USA</small>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 text-right">
-                        <div class="d-inline-flex align-items-center">
-                            <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
-                            <div class="text-left">
-                                <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
-                                <small>info@example.com</small>
+                    <div className="col-lg-3 text-right">
+                        <a href="mailto:eduzellTechnologies@gmail.com" className="text-decoration-none">
+                            <div className="d-inline-flex align-items-center">
+                                <i className="fa fa-2x fa-envelope text-primary mr-3"></i>
+                                <div className="text-left">
+                                    <h6 className="font-weight-semi-bold mb-1">Email Us</h6>
+                                    <small>info@example.com</small>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 text-right">
-                        <div class="d-inline-flex align-items-center">
-                            <i class="fa fa-2x fa-phone text-primary mr-3"></i>
-                            <div class="text-left">
-                                <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
-                                <small>+012 345 6789</small>
+                    <div className="col-lg-3 text-right">
+                        <a href="tel:1234567890" className="text-decoration-none">
+                            <div className="d-inline-flex align-items-center">
+                                <i className="fa fa-2x fa-phone text-primary mr-3"></i>
+                                <div className="text-left">
+                                    <h6 className="font-weight-semi-bold mb-1">Call Us</h6>
+                                    <small>+012 345 6789</small>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        {/* <!-- Topbar End --> */}
+        {/* Topbar End */}
 
 
         {/* <!-- Navbar Start --> */}
             <div class="container-fluid">
                 <div class="row border-top px-xl-5">
                     <div class="col-lg-3 d-none d-lg-block">
-                        <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
+                        <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style={{height: '67px', padding: '0 30px'}}>
                             <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Subjects</h5>
                             <i class="fa fa-angle-down text-primary"></i>
                         </a>
-                        <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
+                        <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style={{width: 'calc(100% - 30px)', zIndex: '9'}}>
                             <div class="navbar-nav w-100">
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link" data-toggle="dropdown">Web Design <i class="fa fa-angle-down float-right mt-1"></i></a>
@@ -109,7 +115,7 @@ const Blog = () => {
         {/* <!-- Header Start --> */}
             <div class="container-fluid page-header" style={{marginBottom: '90px'}}>
                 <div class="container">
-                    <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                    <div class="d-flex flex-column justify-content-center" style={{minHeight: '300px'}}>
                         <h3 class="display-4 text-white text-uppercase">Blog</h3>
                         <div class="d-inline-flex text-white">
                             <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
@@ -209,7 +215,7 @@ const Blog = () => {
                         <div class="col-lg-4 mt-5 mt-lg-0">
                         {/* <!-- Author Bio --> */}
                             <div class="d-flex flex-column text-center bg-dark rounded mb-5 py-5 px-4">
-                                <img src={user} class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;" />
+                                <img src={user} class="img-fluid rounded-circle mx-auto mb-3" style={{width: '100px'}} />
                                 <h3 class="text-primary mb-3">John Doe</h3>
                                 <h3 class="text-uppercase mb-4" style={{letterSpacing: '5px'}}>Tag Cloud</h3>
                                 <p class="text-white m-0">Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est  ipsum erat kasd amet elitr</p>
