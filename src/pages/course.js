@@ -1,5 +1,20 @@
 import React from 'react'
 
+import cat_1 from '../img/cat-1.jpg'
+import cat_2 from '../img/cat-2.jpg'
+import cat_3 from '../img/cat-3.jpg'
+import cat_4 from '../img/cat-4.jpg'
+import cat_5 from '../img/cat-5.jpg'
+import cat_6 from '../img/cat-6.jpg'
+import cat_7 from '../img/cat-7.jpg'
+import cat_8 from '../img/cat-8.jpg'
+import course_1 from '../img/course-1.jpg'
+import course_2 from '../img/course-2.jpg'
+import course_3 from '../img/course-3.jpg'
+import course_4 from '../img/course-4.jpg'
+import course_5 from '../img/course-5.jpg'
+import course_6 from '../img/course-6.jpg'
+
 const Course = () => {
   return (
     <>
@@ -78,18 +93,18 @@ const Course = () => {
                             </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav py-0">
-                                    <a href="index.html" class="nav-item nav-link">Home</a>
-                                    <a href="about.html" class="nav-item nav-link">About</a>
-                                    <a href="course.html" class="nav-item nav-link active">Courses</a>
-                                    <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                                    <a href="/" class="nav-item nav-link">Home</a>
+                                    <a href="about" class="nav-item nav-link">About</a>
+                                    <a href="course" class="nav-item nav-link active">Courses</a>
+                                    <a href="teacher" class="nav-item nav-link">Teachers</a>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="blog.html" class="dropdown-item">Blog List</a>
-                                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                            <a href="blog" class="dropdown-item">Blog List</a>
+                                            <a href="single" class="dropdown-item">Blog Detail</a>
                                         </div>
                                     </div>
-                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                    <a href="contact" class="nav-item nav-link">Contact</a>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                             </div>
@@ -126,7 +141,7 @@ const Course = () => {
                     <div class="row">
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
+                                <img class="img-fluid" src={cat_1} alt="" />
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">Web Design</h4>
                                     <span>100 Courses</span>
@@ -135,7 +150,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="" />
+                                <img class="img-fluid" src={cat_2} alt="" />
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">Development</h4>
                                     <span>100 Courses</span>
@@ -144,7 +159,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-3.jpg" alt="" />
+                                <img class="img-fluid" src={cat_3} alt="" />
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">Game Design</h4>
                                     <span>100 Courses</span>
@@ -153,7 +168,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-4.jpg" alt="" />
+                                <img class="img-fluid" src={cat_4} alt="" />
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">Apps Design</h4>
                                     <span>100 Courses</span>
@@ -162,7 +177,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-5.jpg" alt="" />
+                                <img class="img-fluid" src={cat_5} alt="" />
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">Marketing</h4>
                                     <span>100 Courses</span>
@@ -171,7 +186,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-6.jpg" alt="" />
+                                <img class="img-fluid" src={cat_6} alt="" />
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">Research</h4>
                                     <span>100 Courses</span>
@@ -180,7 +195,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-7.jpg" alt="" /> 
+                                <img class="img-fluid" src={cat_7} alt="" /> 
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">Content Writing</h4>
                                     <span>100 Courses</span>
@@ -189,7 +204,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="img/cat-8.jpg" alt="" />
+                                <img class="img-fluid" src={cat_8} alt="" />
                                 <a class="cat-overlay text-white text-decoration-none" href="">
                                     <h4 class="text-white font-weight-medium">SEO</h4>
                                     <span>100 Courses</span>
@@ -212,7 +227,7 @@ const Course = () => {
                     <div class="row">
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="rounded overflow-hidden mb-2">
-                                <img class="img-fluid" src="img/course-1.jpg" alt="" />
+                                <img class="img-fluid" src={course_1} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -230,7 +245,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="rounded overflow-hidden mb-2">
-                                <img class="img-fluid" src="img/course-2.jpg" alt="" />
+                                <img class="img-fluid" src={course_2} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -248,7 +263,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="rounded overflow-hidden mb-2">
-                                <img class="img-fluid" src="img/course-3.jpg" alt="" />
+                                <img class="img-fluid" src={course_3} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -266,7 +281,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="rounded overflow-hidden mb-2">
-                                <img class="img-fluid" src="img/course-4.jpg" alt="" />
+                                <img class="img-fluid" src={course_4} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -284,7 +299,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="rounded overflow-hidden mb-2">
-                                <img class="img-fluid" src="img/course-5.jpg" alt="" />
+                                <img class="img-fluid" src={course_5} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -302,7 +317,7 @@ const Course = () => {
                         </div>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="rounded overflow-hidden mb-2">
-                                <img class="img-fluid" src="img/course-6.jpg" alt="" />
+                                <img class="img-fluid" src={course_6} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>

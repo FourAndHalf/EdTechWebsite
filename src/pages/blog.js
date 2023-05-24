@@ -1,5 +1,11 @@
 import React from 'react'
 
+import blog_1 from '../img/blog-1.jpg'
+import blog_2 from '../img/blog-2.jpg'
+import blog_3 from '../img/blog-3.jpg'
+import blog_big from '../img/blog-80x80.jpg'
+import user from '../img/user.jpg'
+
 const Blog = () => {
   return (
     <>
@@ -78,18 +84,18 @@ const Blog = () => {
                             </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav py-0">
-                                    <a href="index.html" class="nav-item nav-link">Home</a>
-                                    <a href="about.html" class="nav-item nav-link">About</a>
-                                    <a href="course.html" class="nav-item nav-link">Courses</a>
-                                    <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                                    <a href="/" class="nav-item nav-link">Home</a>
+                                    <a href="about" class="nav-item nav-link">About</a>
+                                    <a href="course" class="nav-item nav-link">Courses</a>
+                                    <a href="teacher" class="nav-item nav-link">Teachers</a>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Blog</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="blog.html" class="dropdown-item active">Blog Grid</a>
-                                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                            <a href="blog" class="dropdown-item active">Blog Grid</a>
+                                            <a href="single" class="dropdown-item">Blog Detail</a>
                                         </div>
                                     </div>
-                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                    <a href="contact" class="nav-item nav-link">Contact</a>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                             </div>
@@ -124,7 +130,7 @@ const Blog = () => {
                             <div class="row pb-3">
                                 <div class="col-lg-6 mb-4">
                                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                        <img class="img-fluid" src="img/blog-1.jpg" alt="" />
+                                        <img class="img-fluid" src={blog_1} alt="" />
                                         <a class="blog-overlay text-decoration-none" href="">
                                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -133,7 +139,7 @@ const Blog = () => {
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                        <img class="img-fluid" src="img/blog-2.jpg" alt="" />
+                                        <img class="img-fluid" src={blog_2} alt="" />
                                         <a class="blog-overlay text-decoration-none" href="">
                                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -142,7 +148,7 @@ const Blog = () => {
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                        <img class="img-fluid" src="img/blog-3.jpg" alt="" />
+                                        <img class="img-fluid" src={blog_3} alt="" />
                                         <a class="blog-overlay text-decoration-none" href="">
                                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -151,7 +157,7 @@ const Blog = () => {
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                        <img class="img-fluid" src="img/blog-1.jpg" alt="" />
+                                        <img class="img-fluid" src={blog_1} alt="" />
                                         <a class="blog-overlay text-decoration-none" href="">
                                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -160,7 +166,7 @@ const Blog = () => {
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                        <img class="img-fluid" src="img/blog-2.jpg" alt="" />
+                                        <img class="img-fluid" src={blog_2} alt="" />
                                         <a class="blog-overlay text-decoration-none" href="">
                                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -169,7 +175,7 @@ const Blog = () => {
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                        <img class="img-fluid" src="img/blog-3.jpg" alt="" />
+                                        <img class="img-fluid" src={blog_3} alt="" />
                                         <a class="blog-overlay text-decoration-none" href="">
                                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -203,7 +209,7 @@ const Blog = () => {
                         <div class="col-lg-4 mt-5 mt-lg-0">
                         {/* <!-- Author Bio --> */}
                             <div class="d-flex flex-column text-center bg-dark rounded mb-5 py-5 px-4">
-                                <img src="img/user.jpg" class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;" />
+                                <img src={user} class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;" />
                                 <h3 class="text-primary mb-3">John Doe</h3>
                                 <h3 class="text-uppercase mb-4" style={{letterSpacing: '5px'}}>Tag Cloud</h3>
                                 <p class="text-white m-0">Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est  ipsum erat kasd amet elitr</p>
@@ -253,21 +259,21 @@ const Blog = () => {
                             <div class="mb-5">
                                 <h3 class="text-uppercase mb-4" style={{letterSpacing: '5px'}}>Recent Post</h3>
                                 <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                                    <img class="img-fluid rounded" src="img/blog-80x80.jpg" alt="" />
+                                    <img class="img-fluid rounded" src={blog_big} alt="" />
                                     <div class="pl-3">
                                         <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
                                         <small>Jan 01, 2050</small>
                                     </div>
                                 </a>
                                 <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                                    <img class="img-fluid rounded" src="img/blog-80x80.jpg" alt="" />
+                                    <img class="img-fluid rounded" src={blog_big} alt="" />
                                     <div class="pl-3">
                                         <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
                                         <small>Jan 01, 2050</small>
                                     </div>
                                 </a>
                                 <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                                    <img class="img-fluid rounded" src="img/blog-80x80.jpg" alt="" />
+                                    <img class="img-fluid rounded" src={blog_big} alt="" />
                                     <div class="pl-3">
                                         <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
                                         <small>Jan 01, 2050</small>

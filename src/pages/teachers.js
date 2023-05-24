@@ -1,5 +1,10 @@
 import React from 'react'
 
+import team_1 from '../img/team-1.jpg'
+import team_2 from '../img/team-2.jpg'
+import team_3 from '../img/team-3.jpg'
+import team_4 from '../img/team-4.jpg'
+
 const Teachers = () => {
   return (
     <>
@@ -78,18 +83,18 @@ const Teachers = () => {
                             </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav py-0">
-                                    <a href="index.html" class="nav-item nav-link">Home</a>
-                                    <a href="about.html" class="nav-item nav-link">About</a>
-                                    <a href="course.html" class="nav-item nav-link">Courses</a>
-                                    <a href="teacher.html" class="nav-item nav-link active">Teachers</a>
+                                    <a href="/" class="nav-item nav-link">Home</a>
+                                    <a href="about" class="nav-item nav-link">About</a>
+                                    <a href="course" class="nav-item nav-link">Courses</a>
+                                    <a href="teacher" class="nav-item nav-link active">Teachers</a>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="blog.html" class="dropdown-item">Blog List</a>
-                                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                            <a href="blog" class="dropdown-item">Blog List</a>
+                                            <a href="single" class="dropdown-item">Blog Detail</a>
                                         </div>
                                     </div>
-                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                    <a href="contact" class="nav-item nav-link">Contact</a>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                             </div>
@@ -127,7 +132,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-1.jpg" alt="" /> 
+                                    <img class="img-fluid" src={team_1} alt="" /> 
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -143,7 +148,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-2.jpg" alt="" />
+                                    <img class="img-fluid" src={team_2} alt="" />
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -159,7 +164,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-3.jpg" alt="" />
+                                    <img class="img-fluid" src={team_3} alt="" />
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -175,7 +180,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-4.jpg" alt="" />
+                                    <img class="img-fluid" src={team_4} alt="" />
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -191,7 +196,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-1.jpg" alt="" />
+                                    <img class="img-fluid" src={team_1} alt="" />
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -207,7 +212,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-2.jpg" alt="" /> 
+                                    <img class="img-fluid" src={team_2} alt="" /> 
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -223,7 +228,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-3.jpg" alt="" />
+                                    <img class="img-fluid" src={team_3} alt="" />
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -239,7 +244,7 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src="img/team-4.jpg" alt="" />
+                                    <img class="img-fluid" src={team_4} alt="" />
                                     <div class="team-social">
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                         <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>

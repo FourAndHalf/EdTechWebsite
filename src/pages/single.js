@@ -1,5 +1,10 @@
 import React from 'react'
 
+import carousal_1 from '../img/carousel-1.jpg'
+import blog_1 from '../img/blog-1.jpg'
+import user from '../img/user.jpg'
+import blog_big from '../img/blog-80x80.jpg'
+
 const Single = () => {
   return (
     <>
@@ -124,7 +129,7 @@ const Single = () => {
                             <div class="mb-5">
                                 <h6 class="text-primary mb-3">Jan 01, 2050</h6>
                                 <h1 class="mb-5">Vero ipsum sea justo dolore eirmod amet dolor tempor lorem</h1>
-                                <img class="img-fluid rounded w-100 mb-4" src="img/carousel-1.jpg" alt="Image" />
+                                <img class="img-fluid rounded w-100 mb-4" src={carousal_1} alt="Image" />
                                 <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
                                     Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
                                     consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
@@ -136,7 +141,7 @@ const Single = () => {
                                     Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
                                     elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.</p>
                                 <h2 class="mb-4">Est dolor lorem et ea</h2>
-                                <img class="img-fluid rounded w-50 float-left mr-4 mb-3" src="img/blog-1.jpg" alt="Image" />
+                                <img class="img-fluid rounded w-50 float-left mr-4 mb-3" src={blog_1} alt="Image" />
                                 <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at
                                     est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet
                                     sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed
@@ -160,7 +165,7 @@ const Single = () => {
                             <div class="mb-5">
                                 <h3 class="text-uppercase mb-4" style={{letterSpacing: '5px'}}>3 Comments</h3>
                                 <div class="media mb-4">
-                                    <img src="img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
+                                    <img src={user} alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
                                         style={{width: '45px'}} />
                                     <div class="media-body">
                                         <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
@@ -171,7 +176,7 @@ const Single = () => {
                                     </div>
                                 </div>
                                 <div class="media mb-4">
-                                    <img src="img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
+                                    <img src={user} alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
                                         style={{width: '45px'}} />
                                     <div class="media-body">
                                         <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
@@ -180,7 +185,7 @@ const Single = () => {
                                             consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
                                         <button class="btn btn-sm btn-secondary">Reply</button>
                                         <div class="media mt-4">
-                                            <img src="img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
+                                            <img src={user} alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
                                                 style={{width: '45px'}} />
                                             <div class="media-body">
                                                 <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
@@ -226,7 +231,7 @@ const Single = () => {
                         <div class="col-lg-4 mt-5 mt-lg-0">
                         {/* <!-- Author Bio --> */}
                             <div class="d-flex flex-column text-center bg-dark rounded mb-5 py-5 px-4">
-                                <img src="img/user.jpg" class="img-fluid rounded-circle mx-auto mb-3" style={{width: '100px'}} />
+                                <img src={user} class="img-fluid rounded-circle mx-auto mb-3" style={{width: '100px'}} />
                                 <h3 class="text-primary mb-3">John Doe</h3>
                                 <h3 class="text-uppercase mb-4" style={{letterSpacing: '5px'}}>Tag Cloud</h3>
                                 <p class="text-white m-0">Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit
@@ -277,21 +282,21 @@ const Single = () => {
                             <div class="mb-5">
                                 <h3 class="text-uppercase mb-4" style={{letterSpacing: '5px'}}>Recent Post</h3>
                                 <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                                    <img class="img-fluid rounded" src="img/blog-80x80.jpg" alt="" />
+                                    <img class="img-fluid rounded" src={blog_big} alt="" />
                                     <div class="pl-3">
                                         <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
                                         <small>Jan 01, 2050</small>
                                     </div>
                                 </a>
                                 <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                                    <img class="img-fluid rounded" src="img/blog-80x80.jpg" alt="" />
+                                    <img class="img-fluid rounded" src={blog_big} alt="" />
                                     <div class="pl-3">
                                         <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
                                         <small>Jan 01, 2050</small>
                                     </div>
                                 </a>
                                 <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                                    <img class="img-fluid rounded" src="img/blog-80x80.jpg" alt="" />
+                                    <img class="img-fluid rounded" src={blog_big} alt="" />
                                     <div class="pl-3">
                                         <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
                                         <small>Jan 01, 2050</small>

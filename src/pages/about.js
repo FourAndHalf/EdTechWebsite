@@ -1,5 +1,10 @@
 import React from 'react'
 
+import about from '../img/about.jpg'
+import testimonial_1 from '../img/testimonial-1.jpg'
+import testimonial_2 from '../img/testimonial-2.jpg'
+import testimonial_3 from '../img/testimonial-3.jpg'
+
 const About = () => {
   return (
     <>
@@ -70,7 +75,7 @@ const About = () => {
                     </div>
                     <div class="col-lg-9">
                         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-                            <a href="" class="text-decoration-none d-block d-lg-none">
+                            <a href="/" class="text-decoration-none d-block d-lg-none">
                                 <h1 class="m-0"><span class="text-primary">E</span>COURSES</h1>
                             </a>
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -85,11 +90,11 @@ const About = () => {
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="blog.html" class="dropdown-item">Blog List</a>
-                                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                            <a href="blog" class="dropdown-item">Blog List</a>
+                                            <a href="single" class="dropdown-item">Blog Detail</a>
                                         </div>
                                     </div>
-                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                    <a href="contact" class="nav-item nav-link">Contact</a>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                             </div>
@@ -121,7 +126,7 @@ const About = () => {
                 <div class="container py-5">
                     <div class="row align-items-center">
                         <div class="col-lg-5">
-                            <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.jpg" alt="" />
+                            <img class="img-fluid rounded mb-4 mb-lg-0" src={about} alt="" />
                         </div>
                         <div class="col-lg-7">
                             <div class="text-left mb-4">
@@ -202,21 +207,21 @@ const About = () => {
                                 <div class="text-center">
                                     <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                                     <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="" />
+                                    <img class="img-fluid mx-auto mb-3" src={testimonial_1} alt="" />
                                     <h5 class="m-0">Client Name</h5>
                                     <span>Profession</span>
                                 </div>
                                 <div class="text-center">
                                     <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                                     <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="" />
+                                    <img class="img-fluid mx-auto mb-3" src={testimonial_2} alt="" />
                                     <h5 class="m-0">Client Name</h5>
                                     <span>Profession</span>
                                 </div>
                                 <div class="text-center">
                                     <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                                     <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="" />
+                                    <img class="img-fluid mx-auto mb-3" src={testimonial_3} alt="" />
                                     <h5 class="m-0">Client Name</h5>
                                     <span>Profession</span>
                                 </div>
