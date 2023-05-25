@@ -99,7 +99,7 @@ const About = () => {
                                     </div>
                                     <a href="contact" className="nav-item nav-link">Contact</a>
                                 </div>
-                                <a className="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
+                                <a className="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="/join">Join Now</a>
                             </div>
                         </nav>
                     </div>
