@@ -22,9 +22,6 @@ import team_1 from '../img/team-1.jpg'
 import team_2 from '../img/team-2.jpg'
 import team_3 from '../img/team-3.jpg'
 import team_4 from '../img/team-4.jpg'
-import testimonial_1 from '../img/testimonial-1.jpg'
-import testimonial_2 from '../img/testimonial-2.jpg'
-import testimonial_3 from '../img/testimonial-3.jpg'
 import blog_1 from '../img/blog-1.jpg'
 import blog_2 from '../img/blog-2.jpg'
 import blog_3 from '../img/blog-3.jpg'
@@ -534,45 +531,6 @@ const Home = () => {
                 </div>
             </div>
         {/*  Team End  */}
-
-
-        {/*  Testimonial Start  */}
-            <div className="container-fluid py-5">
-                <div className="container py-5">
-                    <div className="text-center mb-5">
-                        <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Testimonial</h5>
-                        <h1>What Say Our Students</h1>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8">
-                            <div className="owl-carousel testimonial-carousel">
-                                <div className="text-center">
-                                    <i className="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                    <h4 className="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img className="img-fluid mx-auto mb-3" src={testimonial_1} alt="" />
-                                    <h5 className="m-0">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                                <div className="text-center">
-                                    <i className="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                    <h4 className="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img className="img-fluid mx-auto mb-3" src={testimonial_2} alt="" />
-                                    <h5 className="m-0">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                                <div className="text-center">
-                                    <i className="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                    <h4 className="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    <img className="img-fluid mx-auto mb-3" src={testimonial_3} alt="" />
-                                    <h5 className="m-0">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {/*  Testimonial End  */}
 
 
         {/*  Blog Start  */}
