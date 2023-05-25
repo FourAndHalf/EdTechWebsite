@@ -15,7 +15,7 @@ function ContactForm() {
 
        
     }
-// //The specific property corresponding to the name extracted from the input field is updated with the new value.
+//The specific property corresponding to the name extracted from the input field is updated with the new value.
 //  This is achieved by enclosing the name in square brackets [name] within the object literal. 
 // For example, if name is "email" and value is "example@example.com", the updated property will be { email: "example@example.com" }.
 
