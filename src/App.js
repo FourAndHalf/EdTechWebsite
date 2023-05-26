@@ -7,7 +7,7 @@ import Course from "./pages/course.js";
 import Single from "./pages/single.js";
 import Blog from "./pages/blog.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { Toaster } from 'react-hot-toast';
 function App() {
   return (
     <>

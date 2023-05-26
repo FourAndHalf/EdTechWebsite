@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactForm from './ContactForm'
+import { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
   return (
@@ -120,7 +121,7 @@ const Contact = () => {
         {/* <!-- Contact Start --> */}
 
         <ContactForm />
-
+        <Toaster />
         {/* <!-- Footer Start --> */}
             <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style={{marginTop: '90px'}}>
                 <div class="row pt-5">
