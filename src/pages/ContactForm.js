@@ -27,14 +27,15 @@ function ContactForm() {
 
    const sendEmail = (e) => {
     
-    e.preventDefault()
-    toast("successfully submitted your query")
-    const sendEmail = (e) => {
-        e.preventDefault();
     
+   
+   
+        e.preventDefault();
+        
         emailjs.sendForm('service_8zvn8hf', 'template_3r8xb6j', form.current, 'fby2htD9JgaET9_-i')
           .then((result) => {
               console.log(result.text);
+              toast.success("successfully submitted your query")
               setData({ name: "", email: "", subject: "", message: "" });  // Reset form fields
           }, (error) => {
               console.log(error.text);
@@ -42,13 +43,12 @@ function ContactForm() {
       };
     //  e.target.reset()
    
-   }
-
+   
   return (
     <div>
       {/* CONTACT US FORM */}
    
-      <div classNameName="container-fluid py-5">
+      <div className="container-fluid py-5">
                 <div className="container py-5">
                     <div className="text-center mb-5">
                         <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Contact</h5>
@@ -59,7 +59,7 @@ function ContactForm() {
                             <div className="contact-form bg-secondary rounded p-5">
                                 <div id="success"></div>
 
-                                <form method = 'post' ref = {form} onSubmit={sendEmail} name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <form method = 'post' ref = {form} onSubmit={sendEmail} name="sentMessage" id="contactForm" noValidate>
                                     
                                     <div className="control-group">
                                         <input type="text" className="form-control border-0 p-4" id="name" name="name" value ={data.name} onChange={handleChange} placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
