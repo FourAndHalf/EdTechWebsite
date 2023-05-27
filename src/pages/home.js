@@ -1,4 +1,5 @@
 import React from 'react'
+import setState from 'react-dom';
 
 import carousalImage_1 from '../img/carousel-1.jpg'
 import carousalImage_2 from '../img/carousel-2.jpg'
@@ -33,8 +34,8 @@ const Home = () => {
             <div className="container-fluid d-none d-lg-block">
                 <div className="row align-items-center py-4 px-xl-5">
                     <div className="col-lg-3">
-                        <a href="" className="text-decoration-none">
-                            <h1 className="m-0"><span className="text-primary">E</span>COURSES</h1>
+                        <a href="/" className="text-decoration-none">
+                            <h1 className="m-0"><span className="text-primary">E</span>DUZELL</h1>
                         </a>
                     </div>
                     <div className="col-lg-3 text-right">
@@ -43,7 +44,7 @@ const Home = () => {
                                 <i className="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
                                 <div className="text-left">
                                     <h6 className="font-weight-semi-bold mb-1">Our Office</h6>
-                                    <small>123 Street, New York, USA</small>
+                                    <small>Kochi, India</small>
                                 </div>
                             </div>
                         </a>
@@ -54,7 +55,7 @@ const Home = () => {
                                 <i className="fa fa-2x fa-envelope text-primary mr-3"></i>
                                 <div className="text-left">
                                     <h6 className="font-weight-semi-bold mb-1">Email Us</h6>
-                                    <small>info@example.com</small>
+                                    <small>eduzell@gmail.com</small>
                                 </div>
                             </div>
                         </a>
@@ -65,7 +66,7 @@ const Home = () => {
                                 <i className="fa fa-2x fa-phone text-primary mr-3"></i>
                                 <div className="text-left">
                                     <h6 className="font-weight-semi-bold mb-1">Call Us</h6>
-                                    <small>+012 345 6789</small>
+                                    <small>+91 9976485712</small>
                                 </div>
                             </div>
                         </a>
@@ -87,9 +88,9 @@ const Home = () => {
                                 <div className="nav-item dropdown">
                                     <a href="#" className="nav-link" data-toggle="dropdown">Web Design <i className="fa fa-angle-down float-right mt-1"></i></a>
                                     <div className="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
-                                        <a href="" className="dropdown-item">HTML</a>
-                                        <a href="" className="dropdown-item">CSS</a>
-                                        <a href="" className="dropdown-item">jQuery</a>
+                                        <a href="https://www.coursera.org/search?query=html" className="dropdown-item">HTML</a>
+                                        <a href="https://www.coursera.org/search?query=css" className="dropdown-item">CSS</a>
+                                        <a href="https://www.coursera.org/search?query=jquery" className="dropdown-item">jQuery</a>
                                     </div>
                                 </div>
                                 <a href="" className="nav-item nav-link">Apps Design</a>
