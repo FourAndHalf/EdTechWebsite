@@ -4,9 +4,20 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 // const collection = require("./mongo")
 
+import subscribeEmail from './routes/subscribeEmail.js';
+// import signUp from './routes/signUp.js';
+import contactUs from './routes/contactUs.js';
+import joinUs from './routes/joinUs.js';
+import connectDB from './mongodb/connect.js';
+
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: "10mb" }));
+
+app.use('/api/subscribe', subscribeEmail);
+// app.use('/api/signUp', signUp);
+app.use('/api/contactUs', contactUs);
+app.use('/api/joinUs', joinUs);
 
 const PORT = process.env.PORT || 8080;
 
@@ -14,31 +25,29 @@ app.get("/login", cors(),(req,res)=> {
   
 });//"/"==login page
 
+
+{/*
+
 app.post("/", async(req,res)=>{
   const{email,password}=req.body
   //req.boy has the email and password send using submit() and is stored in {email,password}
-
-try{
-const check = await collection.findOne({email:email})
-//search this particular email already exist
-  if (check){
-    res.json("exist")
-    //if check==true, "exist" message will be shown
-  }
-  else{
-    //if email is new and does not exist
+  try{
+    const check = await collection.findOne({email:email})
+    //search this particular email already exist
+    if (check){
+      res.json("exist")
+      //if check==true, "exist" message will be shown
+    } else {
+      //if email is new and does not exist
+      res.json("not exist")
+    }
+  } catch (e) {
     res.json("not exist")
   }
-
-
-}
-catch (e) {
-    res.json("not exist")
-}
-
-})
+});
 
 //signup
+*/}
 
 
 app.post("/", async(req,res)=>{

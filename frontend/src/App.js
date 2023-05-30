@@ -10,6 +10,7 @@ import Admin from "./pages/admin.js";
 import Join from "./pages/join.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from 'react-hot-toast';
+
 function App() {
   return (
     <>

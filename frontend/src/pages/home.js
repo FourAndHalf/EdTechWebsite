@@ -1,5 +1,4 @@
-import React from 'react'
-import setState from 'react-dom';
+import React, { useState } from 'react'
 
 import carousalImage_1 from '../img/carousel-1.jpg'
 import carousalImage_2 from '../img/carousel-2.jpg'
@@ -28,7 +27,24 @@ import blog_2 from '../img/blog-2.jpg'
 import blog_3 from '../img/blog-3.jpg'
 
 const Home = () => {
-  return (
+    const [subscriberEmail, setSubscriberEmail] = useState('');
+
+    const getSubscriberEmail = async ( event ) => {
+        event.preventDefault();
+
+        console.log("called");
+        console.log(subscriberEmail);
+
+        fetch('/api/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify({email: subscriberEmail})
+        });
+    };
+
+    return (
     <>
         {/* Topbar Start */}
             <div className="container-fluid d-none d-lg-block">
@@ -187,7 +203,7 @@ const Home = () => {
                                 <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>About Us</h5>
                                 <h1>Innovative Way To Learn</h1>
                             </div>
-                            <p>Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet</p>
+                            <p>At Eduzell Technologies, our mission is to nurture each child’s passion, curiosity, optimism, and educational success. Our philosophy is based on proven learning approaches and our digital resources, tools, and learning materials are developed by educational experts to incorporate leading pedagogical practices. We empower all kinds of educators to teach kids by providing the best educational resources in any form or device to be used at home, at school, and everywhere in-between. We celebrate the diversity of our users by offering differentiated resources that can meet a wide range of educational needs - and raise kids’ confidence in learning. We continue to provide academically sound content of the highest caliber and welcome input from our users as we address issues of equity, diversity, inclusivity, and representation.</p>
                             <a href="" className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
                         </div>
                     </div>
@@ -436,8 +452,8 @@ const Home = () => {
                                             <input type="email" className="form-control border-0 p-4" placeholder="Your email" required="required" />
                                         </div>
                                         <div className="form-group">
-                                            <select className="custom-select border-0 px-4" style={{height: '47px'}}>
-                                                <option selected>Select a course</option>
+                                            <select className="custom-select border-0 px-4" style={{height: '47px'}} defaultValue="0">
+                                                <option value="0">Select a course</option>
                                                 <option value="1">Course 1</option>
                                                 <option value="2">Course 1</option>
                                                 <option value="3">Course 1</option>
@@ -608,12 +624,12 @@ const Home = () => {
                         <h5 className="text-primary text-uppercase mb-4" style={{letterSpacing: '5px'}}>Newsletter</h5>
                         <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
                         <div className="w-100">
-                            <div className="input-group">
-                                <input type="text" className="form-control border-light" style={{padding: '30px'}} placeholder="Your Email Address" />
+                            <form onSubmit={getSubscriberEmail} className="input-group">
+                                <input type="email" className="form-control border-light" style={{padding: '30px'}} placeholder="Your Email Address" onChange={(event) => setSubscriberEmail(event.target.value)} value={subscriberEmail} />
                                 <div className="input-group-append">
-                                    <button className="btn btn-primary px-4">Sign Up</button>
+                                    <button type="submit" className="btn btn-primary px-4">Sign Up</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -621,7 +637,7 @@ const Home = () => {
             <div className="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style={{borderColor: 'rgba(256, 256, 256, .1) !important'}}>
                 <div className="row">
                     <div className="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                        <p className="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                        <p className="m-0 text-white">&copy; <a href="#">Eduzell Technologies</a>. All Rights Reserved. 
                         </p>
                     </div>
                     <div className="col-lg-6 text-center text-md-right">
