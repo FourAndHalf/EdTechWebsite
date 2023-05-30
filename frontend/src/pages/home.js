@@ -27,21 +27,23 @@ import blog_2 from '../img/blog-2.jpg'
 import blog_3 from '../img/blog-3.jpg'
 
 const Home = () => {
+
     const [subscriberEmail, setSubscriberEmail] = useState('');
 
     const getSubscriberEmail = async ( event ) => {
         event.preventDefault();
 
-        console.log("called");
-        console.log(subscriberEmail);
-
-        fetch('/api/subscribe', {
+        fetch('http://localhost:5000/api/subscribeEmail', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'
             },
-            body: JSON.stringify({email: subscriberEmail})
+            body: JSON.stringify({
+                email: subscriberEmail
+            })
         });
+
+        window.location.reload();
     };
 
     return (
