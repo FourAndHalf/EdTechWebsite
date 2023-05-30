@@ -29,6 +29,11 @@ import blog_3 from '../img/blog-3.jpg'
 const Home = () => {
 
     const [subscriberEmail, setSubscriberEmail] = useState('');
+    const [signUpForm,  setSignUpForm] = useState({
+        name: '',
+        email: '',
+        course: '',
+    });
 
     const getSubscriberEmail = async ( event ) => {
         event.preventDefault();
@@ -40,6 +45,24 @@ const Home = () => {
             },
             body: JSON.stringify({
                 email: subscriberEmail
+            })
+        });
+
+        window.location.reload();
+    };
+
+    const getSignUp  = async ( event ) => {
+        event.preventDefault();
+
+        fetch('http://localhost:5000/api/signUp', {
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify({
+                name: signUpForm.name,
+                email: signUpForm.email,
+                course: signUpForm.course
             })
         });
 
@@ -431,13 +454,11 @@ const Home = () => {
                                 <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Need Any Courses</h5>
                                 <h1 className="text-white">30% Off For New Students</h1>
                             </div>
-                            <p className="text-white">Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                                ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                                dolor</p>
+                            <p className="text-white">Eduzell IT Solutions offers a comprehensive range of IT services to help clients optimize their technology infrastructure and improve their business processes. With customized solutions tailored to meet the specific needs of each individual’s career and business, Eduzell is committed to delivering the highest quality services to its clients. With responsive support, competitive pricing, and training and support, Eduzell is a great choice for anyone looking to advance their IT skills</p>
                             <ul className="list-inline text-white m-0">
-                                <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                                <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                                <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
+                                <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Excellent training facility</li>
+                                <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Industry experieced staff</li>
+                                <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Timely review of progress</li>
                             </ul>
                         </div>
                         <div className="col-lg-5">
@@ -446,19 +467,19 @@ const Home = () => {
                                     <h1 className="m-0">Sign Up Now</h1>
                                 </div>
                                 <div className="card-body rounded-bottom bg-primary p-5">
-                                    <form>
+                                    <form onSubmit={getSignUp}>
                                         <div className="form-group">
-                                            <input type="text" className="form-control border-0 p-4" placeholder="Your name" required="required" />
+                                            <input type="text" className="form-control border-0 p-4" placeholder="Your name" required="required" onChange={(event) => setSignUpForm({...signUpForm, name: event.target.value})} value={signUpForm.name} />
                                         </div>
                                         <div className="form-group">
-                                            <input type="email" className="form-control border-0 p-4" placeholder="Your email" required="required" />
+                                            <input type="email" className="form-control border-0 p-4" placeholder="Your email" required="required" onChange={(event) => setSignUpForm({...signUpForm, email: event.target.value})} value={signUpForm.email} />
                                         </div>
                                         <div className="form-group">
-                                            <select className="custom-select border-0 px-4" style={{height: '47px'}} defaultValue="0">
-                                                <option value="0">Select a course</option>
-                                                <option value="1">Course 1</option>
-                                                <option value="2">Course 1</option>
-                                                <option value="3">Course 1</option>
+                                            <select className="custom-select border-0 px-4" placeholder='Select a course' style={{height: '47px'}} onChange={(event) => setSignUpForm({...signUpForm, course: event.target.value})} value={signUpForm.course} >
+                                                <option value="" disabled>Select a course</option>
+                                                <option value="FrontEnd Development">FrontEnd Development</option>
+                                                <option value="BackEnd Development">BackEnd Development</option>
+                                                <option value="FullStack Development">FullStack Development</option>
                                             </select>
                                         </div>
                                         <div>
@@ -600,31 +621,31 @@ const Home = () => {
                         <div className="row">
                             <div className="col-md-6 mb-5">
                                 <h5 className="text-primary text-uppercase mb-4" style={{letterSpacing: '5px'}}>Get In Touch</h5>
-                                <p><i className="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                                <p><i className="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                                <p><i className="fa fa-envelope mr-2"></i>info@example.com</p>
+                                <p><i className="fa fa-map-marker-alt mr-2"></i>Kochi, India</p>
+                                <p><i className="fa fa-phone-alt mr-2"></i>+91 9941475245</p>
+                                <p><i className="fa fa-envelope mr-2"></i>info@eduzell.com</p>
                                 <div className="d-flex justify-content-start mt-4">
-                                    <a className="btn btn-outline-light btn-square mr-2" href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-outline-light btn-square mr-2" href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-outline-light btn-square mr-2" href="#"><i className="fab fa-linkedin-in"></i></a>
-                                    <a className="btn btn-outline-light btn-square" href="#"><i className="fab fa-instagram"></i></a>
+                                    <a className="btn btn-outline-light btn-square mr-2" href="https://twitter.com"><i className="fab fa-twitter"></i></a>
+                                    <a className="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a>
+                                    <a className="btn btn-outline-light btn-square mr-2" href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
+                                    <a className="btn btn-outline-light btn-square" href="https://www.instagram.com"><i className="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div className="col-md-6 mb-5">
                                 <h5 className="text-primary text-uppercase mb-4" style={{letterSpacing: '5px'}}>Our Courses</h5>
                                 <div className="d-flex flex-column justify-content-start">
-                                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Web Design</a>
-                                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Apps Design</a>
-                                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Marketing</a>
-                                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Research</a>
-                                    <a className="text-white" href="#"><i className="fa fa-angle-right mr-2"></i>SEO</a>
+                                    <a className="text-white mb-2" href="https://www.coursera.org/search?query=web%20design"><i className="fa fa-angle-right mr-2"></i>Web Design</a>
+                                    <a className="text-white mb-2" href="https://www.coursera.org/search?query=web%20design"><i className="fa fa-angle-right mr-2"></i>Apps Design</a>
+                                    <a className="text-white mb-2" href="https://www.coursera.org/search?query=web%20design"><i className="fa fa-angle-right mr-2"></i>Marketing</a>
+                                    <a className="text-white mb-2" href="https://www.coursera.org/search?query=web%20design"><i className="fa fa-angle-right mr-2"></i>Research</a>
+                                    <a className="text-white" href="https://www.coursera.org/search?query=web%20design"><i className="fa fa-angle-right mr-2"></i>SEO</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-12 mb-5">
                         <h5 className="text-primary text-uppercase mb-4" style={{letterSpacing: '5px'}}>Newsletter</h5>
-                        <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+                        <p>Subscribe to our newsletter to stay up-to-date with the latest news and updates. Get exclusive content, special offers, and more delivered straight to your inbox.</p>
                         <div className="w-100">
                             <form onSubmit={getSubscriberEmail} className="input-group">
                                 <input type="email" className="form-control border-light" style={{padding: '30px'}} placeholder="Your Email Address" onChange={(event) => setSubscriberEmail(event.target.value)} value={subscriberEmail} />
@@ -645,16 +666,16 @@ const Home = () => {
                     <div className="col-lg-6 text-center text-md-right">
                         <ul className="nav d-inline-flex">
                             <li className="nav-item">
-                                <a className="nav-link text-white py-0" href="#">Privacy</a>
+                                <a className="nav-link text-white py-0" href="/about">Privacy</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white py-0" href="#">Terms</a>
+                                <a className="nav-link text-white py-0" href="/about">Terms</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white py-0" href="#">FAQs</a>
+                                <a className="nav-link text-white py-0" href="/about">FAQs</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white py-0" href="#">Help</a>
+                                <a className="nav-link text-white py-0" href="/about">Help</a>
                             </li>
                         </ul>
                     </div>

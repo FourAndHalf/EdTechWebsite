@@ -4,9 +4,9 @@ import * as dotenv from 'dotenv';
 
 import connectDB from './mongodb/connect.js';
 import subscribeEmail from './routes/subscribeEmail.js';
-// import contactUs from './routes/contactUs.js';
-// import joinUs from './routes/joinUs.js';
-// import signUp from './routes/signUp.js';
+import signUp from './routes/signUp.js';
+import contactUs from './routes/contactUs.js';
+import joinUs from './routes/joinUs.js';
 
 dotenv.config();
 
@@ -17,9 +17,9 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000;
 
 app.use('/api/subscribeEmail', subscribeEmail);
-// app.use('/api/contactUs', contactUs);
-// app.use('/api/joinUs', joinUs);
-// app.use('/api/signUp', signUp);
+app.use('/api/signUp', signUp);
+app.use('/api/contactUs', contactUs);
+app.use('/api/joinUs', joinUs);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
