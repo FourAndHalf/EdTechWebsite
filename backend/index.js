@@ -7,6 +7,10 @@ import subscribeEmail from './routes/subscribeEmail.js';
 import signUp from './routes/signUp.js';
 import contactUs from './routes/contactUs.js';
 import joinUs from './routes/joinUs.js';
+import fetchSubscribers from './routes/fetchSubscribers.js';
+import fetchJoinees from './routes/fetchJoinees.js';
+import fetchQueries from './routes/fetchQueries.js';
+import fetchSignUps from './routes/fetchSignUps.js';
 
 dotenv.config();
 
@@ -20,6 +24,10 @@ app.use('/api/subscribeEmail', subscribeEmail);
 app.use('/api/signUp', signUp);
 app.use('/api/contactUs', contactUs);
 app.use('/api/joinUs', joinUs);
+app.use('/api/fetchSubscribers', fetchSubscribers);
+app.use('/api/fetchJoinees', fetchJoinees);
+app.use('/api/fetchSignUps', fetchSignUps);
+app.use('/api/fetchQueries', fetchQueries);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');

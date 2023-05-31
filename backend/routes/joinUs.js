@@ -13,8 +13,8 @@ router.route('/').get((req, res) => {
 router.post('/', async (req, res) => {
   try {
     const { firstName, lastName, email, phoneNumber, education, course, address, locality, state, pincode } = req.body;
-    const user = new joinUs({ firstName, lastName, email, phoneNumber, education, course, address, locality, state, pincode });
-    await user.save(); 
+    const joinee = new joinUs({ firstName, lastName, email, phoneNumber, education, course, address, locality, state, pincode });
+    await joinee.save(); 
 
     res.status(200).json({ message: 'Join Form Submitted' });
   } catch (error) {
