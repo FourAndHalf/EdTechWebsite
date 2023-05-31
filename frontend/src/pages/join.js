@@ -37,8 +37,9 @@ const Join = () => {
         })
        
         window.location.reload();
+
+        window.location.href = 'https://buy.stripe.com/test_cN201UeGz8Lz6hG9AC';
     };
-       
 
   return (
     <>
