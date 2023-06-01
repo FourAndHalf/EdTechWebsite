@@ -235,205 +235,203 @@ const Home = () => {
                 </div>
             </div>
         {/* About End */}
-
         
-        {/*  Category Start */}
-            <div className="container-fluid py-5">
-                <div className="container pt-5 pb-3">
-                    <div className="text-center mb-5">
-                        <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Subjects</h5>
+        {/* <!-- Category Start --> */}
+        <div class="container-fluid py-5">
+                <div class="container pt-5 pb-3">
+                    <div class="text-center mb-5">
+                        <h5 class="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Subjects</h5>
                         <h1>Explore Top Subjects</h1>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_1} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">Web Design</h4>
-                                    <span>100 Courses</span>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_1} alt="" />
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=web%20design">
+                                    <h4 class="text-white font-weight-medium">Web Design</h4>
+                                    <span>25 Courses</span>
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_2} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">Development</h4>
-                                    <span>100 Courses</span>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_2} alt="" />
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=development">
+                                    <h4 class="text-white font-weight-medium">Development</h4>
+                                    <span>18 Courses</span>
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_3} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">Game Design</h4>
-                                    <span>100 Courses</span>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_3} alt="" />
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=game%20development&">
+                                    <h4 class="text-white font-weight-medium">Game Design</h4>
+                                    <span>6 Courses</span>
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_4} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">Apps Design</h4>
-                                    <span>100 Courses</span>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_4} alt="" />
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=app%20design">
+                                    <h4 class="text-white font-weight-medium">Apps Design</h4>
+                                    <span>15 Courses</span>
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_5} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">Marketing</h4>
-                                    <span>100 Courses</span>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_5} alt="" />
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=marketing">
+                                    <h4 class="text-white font-weight-medium">Marketing</h4>
+                                    <span>10 Courses</span>
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_6} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">Research</h4>
-                                    <span>100 Courses</span>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_6} alt="" />
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=research">
+                                    <h4 class="text-white font-weight-medium">Research</h4>
+                                    <span>5 Courses</span>
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_7} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">Content Writing</h4>
-                                    <span>100 Courses</span>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_7} alt="" /> 
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=Content%20writing">
+                                    <h4 class="text-white font-weight-medium">Content Writing</h4>
+                                    <span>20 Courses</span>
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="cat-item position-relative overflow-hidden rounded mb-2">
-                                <img className="img-fluid" src={cat_8} alt="" />
-                                <a className="cat-overlay text-white text-decoration-none" href="">
-                                    <h4 className="text-white font-weight-medium">SEO</h4>
-                                    <span>100 Courses</span>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                                <img class="img-fluid" src={cat_8} alt="" />
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=SEO">
+                                    <h4 class="text-white font-weight-medium">SEO</h4>
+                                    <span>13 Courses</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        {/*  Category Start  */}
+        {/* <!-- Category Start --> */}
 
-
-        {/*  Courses Start  */}
-            <div className="container-fluid py-5">
-                <div className="container py-5">
-                    <div className="text-center mb-5">
-                        <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Courses</h5>
+        {/* <!-- Courses Start --> */}
+        <div class="container-fluid py-5">
+                <div class="container py-5">
+                    <div class="text-center mb-5">
+                        <h5 class="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Courses</h5>
                         <h1>Our Popular Courses</h1>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 mb-4">
-                            <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src={course_1} alt="" />
-                                <div className="bg-secondary p-4">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small className="m-0"><i className="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="rounded overflow-hidden mb-2">
+                                <img class="img-fluid" src={course_1} alt="" />
+                                <div class="bg-secondary p-4">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>35 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>03h 00m</small>
                                     </div>
-                                    <a className="h5" href="">Web design & development courses for beginner</a>
-                                    <div className="border-top mt-4 pt-4">
-                                        <div className="d-flex justify-content-between">
-                                            <h6 className="m-0"><i className="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 className="m-0">$99</h5>
+                                    <a class="h5" href="https://www.coursera.org/specializations/web-design">Web design for everybody! Introduction to development</a>
+                                    <div class="border-top mt-4 pt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(449)</small></h6>
+                                            <h5 class="m-0">₹999</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 mb-4">
-                            <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src={course_2} alt="" />
-                                <div className="bg-secondary p-4">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small className="m-0"><i className="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="rounded overflow-hidden mb-2">
+                                <img class="img-fluid" src={course_2} alt="" />
+                                <div class="bg-secondary p-4">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>33 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 30m</small>
                                     </div>
-                                    <a className="h5" href="">Web design & development courses for beginner</a>
-                                    <div className="border-top mt-4 pt-4">
-                                        <div className="d-flex justify-content-between">
-                                            <h6 className="m-0"><i className="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 className="m-0">$99</h5>
+                                    <a class="h5" href="https://www.coursera.org/learn/introduction-to-cybersecurity-foundations">Introduction to cybersecurity foundations</a>
+                                    <div class="border-top mt-4 pt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(320)</small></h6>
+                                            <h5 class="m-0">₹1999</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 mb-4">
-                            <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src={course_3} alt="" />
-                                <div className="bg-secondary p-4">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small className="m-0"><i className="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="rounded overflow-hidden mb-2">
+                                <img class="img-fluid" src={course_3} alt="" />
+                                <div class="bg-secondary p-4">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 30m</small>
                                     </div>
-                                    <a className="h5" href="">Web design & development courses for beginner</a>
-                                    <div className="border-top mt-4 pt-4">
-                                        <div className="d-flex justify-content-between">
-                                            <h6 className="m-0"><i className="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 className="m-0">$99</h5>
+                                    <a class="h5" href="https://www.coursera.org/projects/build-a-full-website-using-wordpress">Build a full website using wordpress</a>
+                                    <div class="border-top mt-4 pt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(340)</small></h6>
+                                            <h5 class="m-0">₹899</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 mb-4">
-                            <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src={course_4} alt="" />
-                                <div className="bg-secondary p-4">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small className="m-0"><i className="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="rounded overflow-hidden mb-2">
+                                <img class="img-fluid" src={course_4} alt="" />
+                                <div class="bg-secondary p-4">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>26 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>04h 30m</small>
                                     </div>
-                                    <a className="h5" href="">Web design & development courses for beginner</a>
-                                    <div className="border-top mt-4 pt-4">
-                                        <div className="d-flex justify-content-between">
-                                            <h6 className="m-0"><i className="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 className="m-0">$99</h5>
+                                    <a class="h5" href="https://www.coursera.org/learn/meta-cloud-computing">Cloud Computing! Introduction to AWS services</a>
+                                    <div class="border-top mt-4 pt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.2 <small>(112)</small></h6>
+                                            <h5 class="m-0">₹1599</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 mb-4">
-                            <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src={course_5} alt="" />
-                                <div className="bg-secondary p-4">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small className="m-0"><i className="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="rounded overflow-hidden mb-2">
+                                <img class="img-fluid" src={course_5} alt="" />
+                                <div class="bg-secondary p-4">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>03h 30m</small>
                                     </div>
-                                    <a className="h5" href="">Web design & development courses for beginner</a>
-                                    <div className="border-top mt-4 pt-4">
-                                        <div className="d-flex justify-content-between">
-                                            <h6 className="m-0"><i className="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 className="m-0">$99</h5>
+                                    <a class="h5" href="https://www.coursera.org/learn/cloud-computing-foundations-duke">Cloud computing fundamentals and theories</a>
+                                    <div class="border-top mt-4 pt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.2 <small>(200)</small></h6>
+                                            <h5 class="m-0">₹1599</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 mb-4">
-                            <div className="rounded overflow-hidden mb-2">
-                                <img className="img-fluid" src={course_6} alt="" />
-                                <div className="bg-secondary p-4">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small className="m-0"><i className="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="rounded overflow-hidden mb-2">
+                                <img class="img-fluid" src={course_6} alt="" />
+                                <div class="bg-secondary p-4">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 00m</small>
                                     </div>
-                                    <a className="h5" href="">Web design & development courses for beginner</a>
-                                    <div className="border-top mt-4 pt-4">
-                                        <div className="d-flex justify-content-between">
-                                            <h6 className="m-0"><i className="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 className="m-0">$99</h5>
+                                    <a class="h5" href="https://www.coursera.org/professional-certificates/facebook-social-media-marketing">Marketing & customer relations for beginner</a>
+                                    <div class="border-top mt-4 pt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.1 <small>(170)</small></h6>
+                                            <h5 class="m-0">₹1299</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -442,8 +440,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        {/*  Courses End  */}
-
+        {/* <!-- Courses End --> */}
 
         {/*  Registration Start  */}
             <div className="container-fluid bg-registration py-5" style={{margin: '90px 0'}}>
@@ -494,7 +491,6 @@ const Home = () => {
             </div>
         {/*  Registration End  */}
 
-
         {/*  Team Start  */}
             <div className="container-fluid py-5">
                 <div className="container pt-5 pb-3">
@@ -508,13 +504,13 @@ const Home = () => {
                                 <div className="team-img position-relative">
                                     <img className="img-fluid" src={team_1} alt="" />
                                     <div className="team-social">
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.twitter.com"><i className="fab fa-twitter"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                                 <div className="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
+                                    <h5>Janice Taylor</h5>
                                     <p className="m-0">Web Designer</p>
                                 </div>
                             </div>
@@ -524,14 +520,14 @@ const Home = () => {
                                 <div className="team-img position-relative">
                                     <img className="img-fluid" src={team_2} alt="" />
                                     <div className="team-social">
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.twitter.com"><i className="fab fa-twitter"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                                 <div className="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p className="m-0">Web Designer</p>
+                                    <h5>John Snow</h5>
+                                    <p className="m-0">Network Specialist</p>
                                 </div>
                             </div>
                         </div>
@@ -540,14 +536,14 @@ const Home = () => {
                                 <div className="team-img position-relative">
                                     <img className="img-fluid" src={team_3} alt="" />
                                     <div className="team-social">
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.twitter.com"><i className="fab fa-twitter"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                                 <div className="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p className="m-0">Web Designer</p>
+                                    <h5>Mattie Swing</h5>
+                                    <p className="m-0">Content Writer</p>
                                 </div>
                             </div>
                         </div>
@@ -556,14 +552,14 @@ const Home = () => {
                                 <div className="team-img position-relative">
                                     <img className="img-fluid" src={team_4} alt="" />
                                     <div className="team-social">
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-outline-light btn-square mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.twitter.com"><i className="fab fa-twitter"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a>
+                                        <a className="btn btn-outline-light btn-square mx-1" href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                                 <div className="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p className="m-0">Web Designer</p>
+                                    <h5>Mannie Martin</h5>
+                                    <p className="m-0">Game Designer</p>
                                 </div>
                             </div>
                         </div>
@@ -585,8 +581,8 @@ const Home = () => {
                             <div className="blog-item position-relative overflow-hidden rounded mb-2">
                                 <img className="img-fluid" src={blog_1} alt="" />
                                 <a className="blog-overlay text-decoration-none" href="">
-                                    <h5 className="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p className="text-primary m-0">Jan 01, 2050</p>
+                                    <h5 className="text-white mb-3">The Advent of AI in Development Space</h5>
+                                    <p className="text-primary m-0">Jan 21, 2023</p>
                                 </a>
                             </div>
                         </div>
@@ -594,8 +590,8 @@ const Home = () => {
                             <div className="blog-item position-relative overflow-hidden rounded mb-2">
                                 <img className="img-fluid" src={blog_2} alt="" />
                                 <a className="blog-overlay text-decoration-none" href="">
-                                    <h5 className="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p className="text-primary m-0">Jan 01, 2050</p>
+                                    <h5 className="text-white mb-3">The Role of Colud Computing</h5>
+                                    <p className="text-primary m-0">Nov 23, 2022</p>
                                 </a>
                             </div>
                         </div>
@@ -603,8 +599,8 @@ const Home = () => {
                             <div className="blog-item position-relative overflow-hidden rounded mb-2">
                                 <img className="img-fluid" src={blog_3} alt="" /> 
                                 <a className="blog-overlay text-decoration-none" href="">
-                                    <h5 className="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p className="text-primary m-0">Jan 01, 2050</p>
+                                    <h5 className="text-white mb-3">The State of Content Writing</h5>
+                                    <p className="text-primary m-0">Sept 30, 2022</p>
                                 </a>
                             </div>
                         </div>

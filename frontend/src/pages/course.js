@@ -154,7 +154,6 @@ const Course = () => {
             </div>
         {/* <!-- Header End --> */}
 
-
         {/* <!-- Category Start --> */}
             <div class="container-fluid py-5">
                 <div class="container pt-5 pb-3">
@@ -166,72 +165,72 @@ const Course = () => {
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_1} alt="" />
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=web%20design">
                                     <h4 class="text-white font-weight-medium">Web Design</h4>
-                                    <span>100 Courses</span>
+                                    <span>25 Courses</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_2} alt="" />
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=development">
                                     <h4 class="text-white font-weight-medium">Development</h4>
-                                    <span>100 Courses</span>
+                                    <span>18 Courses</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_3} alt="" />
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=game%20development&">
                                     <h4 class="text-white font-weight-medium">Game Design</h4>
-                                    <span>100 Courses</span>
+                                    <span>6 Courses</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_4} alt="" />
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=app%20design">
                                     <h4 class="text-white font-weight-medium">Apps Design</h4>
-                                    <span>100 Courses</span>
+                                    <span>15 Courses</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_5} alt="" />
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=marketing">
                                     <h4 class="text-white font-weight-medium">Marketing</h4>
-                                    <span>100 Courses</span>
+                                    <span>10 Courses</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_6} alt="" />
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=research">
                                     <h4 class="text-white font-weight-medium">Research</h4>
-                                    <span>100 Courses</span>
+                                    <span>5 Courses</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_7} alt="" /> 
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=Content%20writing">
                                     <h4 class="text-white font-weight-medium">Content Writing</h4>
-                                    <span>100 Courses</span>
+                                    <span>20 Courses</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="cat-item position-relative overflow-hidden rounded mb-2">
                                 <img class="img-fluid" src={cat_8} alt="" />
-                                <a class="cat-overlay text-white text-decoration-none" href="">
+                                <a class="cat-overlay text-white text-decoration-none" href="https://www.coursera.org/search?query=SEO">
                                     <h4 class="text-white font-weight-medium">SEO</h4>
-                                    <span>100 Courses</span>
+                                    <span>13 Courses</span>
                                 </a>
                             </div>
                         </div>
@@ -240,9 +239,8 @@ const Course = () => {
             </div>
         {/* <!-- Category Start --> */}
 
-
         {/* <!-- Courses Start --> */}
-            <div class="container-fluid py-5">
+        <div class="container-fluid py-5">
                 <div class="container py-5">
                     <div class="text-center mb-5">
                         <h5 class="text-primary text-uppercase mb-3" style={{letterSpacing: '5px'}}>Courses</h5>
@@ -254,14 +252,14 @@ const Course = () => {
                                 <img class="img-fluid" src={course_1} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
-                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>35 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>03h 00m</small>
                                     </div>
-                                    <a class="h5" href="">Web design & development courses for beginner</a>
+                                    <a class="h5" href="https://www.coursera.org/specializations/web-design">Web design for everybody! Introduction to development</a>
                                     <div class="border-top mt-4 pt-4">
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 class="m-0">$99</h5>
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(449)</small></h6>
+                                            <h5 class="m-0">₹999</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -272,14 +270,14 @@ const Course = () => {
                                 <img class="img-fluid" src={course_2} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
-                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>33 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 30m</small>
                                     </div>
-                                    <a class="h5" href="">Web design & development courses for beginner</a>
+                                    <a class="h5" href="https://www.coursera.org/learn/introduction-to-cybersecurity-foundations">Introduction to cybersecurity foundations</a>
                                     <div class="border-top mt-4 pt-4">
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 class="m-0">$99</h5>
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(320)</small></h6>
+                                            <h5 class="m-0">₹1999</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -290,14 +288,14 @@ const Course = () => {
                                 <img class="img-fluid" src={course_3} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
-                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 30m</small>
                                     </div>
-                                    <a class="h5" href="">Web design & development courses for beginner</a>
+                                    <a class="h5" href="https://www.coursera.org/projects/build-a-full-website-using-wordpress">Build a full website using wordpress</a>
                                     <div class="border-top mt-4 pt-4">
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 class="m-0">$99</h5>
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(340)</small></h6>
+                                            <h5 class="m-0">₹899</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -308,14 +306,14 @@ const Course = () => {
                                 <img class="img-fluid" src={course_4} alt="" />
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
-                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                                        <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>26 Students</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>04h 30m</small>
                                     </div>
-                                    <a class="h5" href="">Web design & development courses for beginner</a>
+                                    <a class="h5" href="https://www.coursera.org/learn/meta-cloud-computing">Cloud Computing! Introduction to AWS services</a>
                                     <div class="border-top mt-4 pt-4">
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 class="m-0">$99</h5>
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.2 <small>(112)</small></h6>
+                                            <h5 class="m-0">₹1599</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -327,13 +325,13 @@ const Course = () => {
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>03h 30m</small>
                                     </div>
-                                    <a class="h5" href="">Web design & development courses for beginner</a>
+                                    <a class="h5" href="https://www.coursera.org/learn/cloud-computing-foundations-duke">Cloud computing fundamentals and theories</a>
                                     <div class="border-top mt-4 pt-4">
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 class="m-0">$99</h5>
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.2 <small>(200)</small></h6>
+                                            <h5 class="m-0">₹1599</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -345,13 +343,13 @@ const Course = () => {
                                 <div class="bg-secondary p-4">
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                                        <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 00m</small>
                                     </div>
-                                    <a class="h5" href="">Web design & development courses for beginner</a>
+                                    <a class="h5" href="https://www.coursera.org/professional-certificates/facebook-social-media-marketing">Marketing & customer relations for beginner</a>
                                     <div class="border-top mt-4 pt-4">
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                            <h5 class="m-0">$99</h5>
+                                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.1 <small>(170)</small></h6>
+                                            <h5 class="m-0">₹1299</h5>
                                         </div>
                                     </div>
                                 </div>

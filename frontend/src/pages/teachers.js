@@ -4,6 +4,10 @@ import team_1 from '../img/team-1.jpg'
 import team_2 from '../img/team-2.jpg'
 import team_3 from '../img/team-3.jpg'
 import team_4 from '../img/team-4.jpg'
+import team_5 from '../img/team-5.jpg'
+import team_6 from '../img/team-6.jpg'
+import team_7 from '../img/team-7.jpg'
+import team_8 from '../img/team-8.jpg'
 
 const Teachers = () => {
     const [subscriberEmail, setSubscriberEmail] = useState('');
@@ -158,13 +162,13 @@ const Teachers = () => {
                                 <div class="team-img position-relative">
                                     <img class="img-fluid" src={team_1} alt="" /> 
                                     <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                                 <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
+                                    <h5>Janice Taylor</h5>
                                     <p class="m-0">Web Designer</p>
                                 </div>
                             </div>
@@ -174,14 +178,14 @@ const Teachers = () => {
                                 <div class="team-img position-relative">
                                     <img class="img-fluid" src={team_2} alt="" />
                                     <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                                 <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p class="m-0">Web Designer</p>
+                                    <h5>John Snow</h5>
+                                    <p class="m-0">Network Specialist</p>
                                 </div>
                             </div>
                         </div>
@@ -190,14 +194,13 @@ const Teachers = () => {
                                 <div class="team-img position-relative">
                                     <img class="img-fluid" src={team_3} alt="" />
                                     <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>                                    </div>
                                 </div>
                                 <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p class="m-0">Web Designer</p>
+                                    <h5>Mattie Swing</h5>
+                                    <p class="m-0">Content Writer</p>
                                 </div>
                             </div>
                         </div>
@@ -206,13 +209,59 @@ const Teachers = () => {
                                 <div class="team-img position-relative">
                                     <img class="img-fluid" src={team_4} alt="" />
                                     <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></div>
+                                    </div>
+                                <div class="bg-secondary p-4">
+                                    <h5>Mannie Martin</h5>
+                                    <p class="m-0">Game Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center team mb-4">
+                            <div class="team-item rounded overflow-hidden mb-2">
+                                <div class="team-img position-relative">
+                                    <img class="img-fluid" src={team_5} alt="" />
+                                    <div class="team-social">
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></div>
+                                    </div>
+                                <div class="bg-secondary p-4">
+                                    <h5>Hannie Tsu</h5>
+                                    <p class="m-0">DSA Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center team mb-4">
+                            <div class="team-item rounded overflow-hidden mb-2">
+                                <div class="team-img position-relative">
+                                    <img class="img-fluid" src={team_6} alt="" /> 
+                                    <div class="team-social">
+                                       <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                                 <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
+                                    <h5>Gia Salamanca</h5>
+                                    <p class="m-0">DSA Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center team mb-4">
+                            <div class="team-item rounded overflow-hidden mb-2">
+                                <div class="team-img position-relative">
+                                    <img class="img-fluid" src={team_7} alt="" />
+                                    <div class="team-social">
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-secondary p-4">
+                                    <h5>Arianna Reyes</h5>
                                     <p class="m-0">Web Designer</p>
                                 </div>
                             </div>
@@ -220,64 +269,15 @@ const Teachers = () => {
                         <div class="col-md-6 col-lg-3 text-center team mb-4">
                             <div class="team-item rounded overflow-hidden mb-2">
                                 <div class="team-img position-relative">
-                                    <img class="img-fluid" src={team_1} alt="" />
+                                    <img class="img-fluid" src={team_8} alt="" />
                                     <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-square mx-1" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></div>
                                     </div>
-                                </div>
                                 <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p class="m-0">Web Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 text-center team mb-4">
-                            <div class="team-item rounded overflow-hidden mb-2">
-                                <div class="team-img position-relative">
-                                    <img class="img-fluid" src={team_2} alt="" /> 
-                                    <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p class="m-0">Web Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 text-center team mb-4">
-                            <div class="team-item rounded overflow-hidden mb-2">
-                                <div class="team-img position-relative">
-                                    <img class="img-fluid" src={team_3} alt="" />
-                                    <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p class="m-0">Web Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 text-center team mb-4">
-                            <div class="team-item rounded overflow-hidden mb-2">
-                                <div class="team-img position-relative">
-                                    <img class="img-fluid" src={team_4} alt="" />
-                                    <div class="team-social">
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-secondary p-4">
-                                    <h5>Jhon Doe</h5>
-                                    <p class="m-0">Web Designer</p>
+                                    <h5>Rebecca Welton</h5>
+                                    <p class="m-0">Relations Specialist</p>
                                 </div>
                             </div>
                         </div>
