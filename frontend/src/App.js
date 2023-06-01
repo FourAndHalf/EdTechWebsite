@@ -8,8 +8,8 @@ import Single from "./pages/single.js";
 import Blog from "./pages/blog.js";
 import Admin from "./pages/admin.js";
 import Join from "./pages/join.js";
+import AddBlog from "./pages/addBlog.js"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/join" element={<Join />} />
+          <Route path="/addBlog" element={<AddBlog />} />
         </Routes>
       </Router>
       

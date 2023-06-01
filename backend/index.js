@@ -11,6 +11,7 @@ import fetchSubscribers from './routes/fetchSubscribers.js';
 import fetchJoinees from './routes/fetchJoinees.js';
 import fetchQueries from './routes/fetchQueries.js';
 import fetchSignUps from './routes/fetchSignUps.js';
+import blogData from './routes/blogData.js';
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use('/api/fetchSubscribers', fetchSubscribers);
 app.use('/api/fetchJoinees', fetchJoinees);
 app.use('/api/fetchSignUps', fetchSignUps);
 app.use('/api/fetchQueries', fetchQueries);
+app.use('/api/blogPost', blogData)
 
 app.get('/', (req, res) => {
   res.send('Hello World!');

@@ -150,14 +150,14 @@ const About = () => {
 
 
         {/*  Header Start  */}
-            <div class="container-fluid page-header" style={{marginBottom: '90px'}}>
-                <div class="container">
-                    <div class="d-flex flex-column justify-content-center" style={{minHeight: '300px'}}>
-                        <h3 class="display-4 text-white text-uppercase">About</h3>
-                        <div class="d-inline-flex text-white">
-                            <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
-                            <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                            <p class="m-0 text-uppercase">About</p>
+            <div className="container-fluid page-header" style={{marginBottom: '90px'}}>
+                <div className="container">
+                    <div className="d-flex flex-column justify-content-center" style={{minHeight: '300px'}}>
+                        <h3 className="display-4 text-white text-uppercase">About</h3>
+                        <div className="d-inline-flex text-white">
+                            <p className="m-0 text-uppercase"><a className="text-white" href="">Home</a></p>
+                            <i className="fa fa-angle-double-right pt-1 px-3"></i>
+                            <p className="m-0 text-uppercase">About</p>
                         </div>
                     </div>
                 </div>
@@ -305,7 +305,7 @@ const About = () => {
         {/*  Footer End  */}
 
         {/*  Back to Top  */}
-            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+            <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="fa fa-angle-double-up"></i></a>
     </>
   )
 }
