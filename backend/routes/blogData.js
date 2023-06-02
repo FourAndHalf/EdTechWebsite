@@ -4,11 +4,11 @@ import blogData from '../mongodb/models/blogData.js';
 
 dotenv.config();
 
-const router = express.Router();
+// const router = express.Router();
 
-router.route('/').get((req, res) => {
-    res.status(200).json({ message: 'blog post'})
-})
+// router.route('/').get((req, res) => {
+//     res.status(200).json({ message: 'blog post'})
+// })
 
 router.route('/').post(async (req, res) => {
     try {
@@ -22,5 +22,16 @@ router.route('/').post(async (req, res) => {
         res.status(500).send(error?.response.data.error.message || 'Something went wrong');
     }
 })
+router.route('/search').get((req,res) =>{
+    try{
+        const search = req.query.search || "";
+        const blog = await blogData.find({name: $regex : search, $options : 'i'})
+        res.status(200).json(blog)
+    }
+}
+
+
+)
+
 
 export default router;
