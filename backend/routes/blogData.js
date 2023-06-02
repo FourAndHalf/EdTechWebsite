@@ -4,7 +4,7 @@ import blogData from '../mongodb/models/blogData.js';
 
 dotenv.config();
 
-// const router = express.Router();
+const router = express.Router();
 
 
 router.route('/').post(async (req, res) => {
@@ -19,22 +19,59 @@ router.route('/').post(async (req, res) => {
         res.status(500).send(error?.response.data.error.message || 'Something went wrong');
     }
 })
-router.route('/search').get((req,res) =>{
+router.route('/search/:keyword').get(async(req,res) =>{
     try{
-        const search = req.query.search || "";
-        const blog = await blogData.find({name: {$regex : search, $options : 'i'}})
+        const {keyword} = req.params.keyword
+        const escapedKeyword = escapeRegExp(keyword);
+
+        const blog = await blogData.find({
+             keyword: { $regex: new RegExp(escapedKeyword, 'i') },
+             
+        })
+        
+        
+        // const blog = await blogData.find({name: {$regex : search, $options : 'i'}})
+        if (blog.length >0) {
+            res.status(200).json(blog)
+          } else {
+            res.status(404).json({ message: 'Blog not found' });
+          }
+    }
+    catch (error) {
+        console.error(error);
+        res.status(500).send('Something went wrong');
+    }
+
+
+})
+
+// router.route('/').get (async (req, res) => {
+ 
+//     const contac = await Contact.findById(req.params.id)
+//   if (!contact)
+//   {
+//     res.status(404)
+//     throw new Error ("Contact not found")
+//   }
+//   res.status(200).json(contact);
+//  });
+
+
+router.route('/').get(async(req,res) =>{
+    try{
+        
+        const blog = await blogData.find()
         res.status(200).json(blog)
     }
     catch (error) {
         console.error(error);
-        res.status(500).send(error?.response.data.error.message || 'Something went wrong');
+        res.status(500).send('Something went wrong');
     }
 
 
-}
+})
 
 
-)
 
 
 export default router;
