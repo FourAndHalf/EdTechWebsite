@@ -1,131 +1,47 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
-const dotenv = require("dotenv").config();
-// const collection = require("./mongo")
+import express from 'express';
+import cors from 'cors';
+import * as dotenv from 'dotenv';
 
+import connectDB from './mongodb/connect.js';
 import subscribeEmail from './routes/subscribeEmail.js';
-// import signUp from './routes/signUp.js';
+import signUp from './routes/signUp.js';
 import contactUs from './routes/contactUs.js';
 import joinUs from './routes/joinUs.js';
-import connectDB from './mongodb/connect.js';
+import fetchSubscribers from './routes/fetchSubscribers.js';
+import fetchJoinees from './routes/fetchJoinees.js';
+import fetchQueries from './routes/fetchQueries.js';
+import fetchSignUps from './routes/fetchSignUps.js';
+import blogData from './routes/blogData.js';
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
-app.use(express.json({ limit: "10mb" }));
+app.use(express.json());
 
-app.use('/api/subscribe', subscribeEmail);
-// app.use('/api/signUp', signUp);
+const PORT = process.env.PORT || 5000;
+
+app.use('/api/subscribeEmail', subscribeEmail);
+app.use('/api/signUp', signUp);
 app.use('/api/contactUs', contactUs);
 app.use('/api/joinUs', joinUs);
+app.use('/api/fetchSubscribers', fetchSubscribers);
+app.use('/api/fetchJoinees', fetchJoinees);
+app.use('/api/fetchSignUps', fetchSignUps);
+app.use('/api/fetchQueries', fetchQueries);
+app.use('/api/blogPost', blogData)
 
-const PORT = process.env.PORT || 8080;
-
-app.get("/login", cors(),(req,res)=> {
-  
-});//"/"==login page
-
-
-{/*
-
-app.post("/", async(req,res)=>{
-  const{email,password}=req.body
-  //req.boy has the email and password send using submit() and is stored in {email,password}
-  try{
-    const check = await collection.findOne({email:email})
-    //search this particular email already exist
-    if (check){
-      res.json("exist")
-      //if check==true, "exist" message will be shown
-    } else {
-      //if email is new and does not exist
-      res.json("not exist")
-    }
-  } catch (e) {
-    res.json("not exist")
-  }
-});
-
-//signup
-*/}
-
-
-app.post("/", async(req,res)=>{
-  const{email,password}=req.body
-  //req.boy has the email and password send using submit() and is stored in {email,password}
-
-  const data = {
-    email:email,
-    password : password
-  }
-//making new object 'data' that stores email and password passed here through req.body
-
-
-  try{
-const check = await collection.findOne({email:email})
-//search this particular email already exist
-  if (check){
-    res.json("exist")
-    //if check==true, "exist" message will be shown
-  }
-  else{
-    //if email is new and does not exist
-    res.json("not exist")
-    await collection.insertMany([data])
-    //insert data to database if user is new 
-  }
-
-
-}
-catch (e) {
-    res.json("not exist")
-}
-
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 })
 
-
-
-
-
-
-
-
-
-//mongodb connection
-mongoose.set("strictQuery", false);
-mongoose
-  .connect(process.env.MONGODB_URL) // if this got connected print the below message
-  .then(() => console.log("Connect to Database"))
-  .catch((err) => console.log(err)); // if any error, will be displayed herw
-
-
-
-
-//signup schema
-const newSchema = new mongoose.Schema({
-  email:{
-    type:String,
-    required:true
-  },
-  password:{
-    type:String,
-    required:true
-  },
-  course:{
-    type: String,
-    required: true,
-    // enum: ['', 'Course 2', 'Course 3'] 
+const startServer = async () => {
+  try {
+    connectDB(process.env.MONGODB_URL);
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  } catch (error) {
+    console.log(error);
   }
-})
+}
 
-
-const collection = mongoose.model("collection", newSchema)
-module.exports = collection
-
-
-
-
-//server is ruuning
-app.listen(PORT, () => console.log("server is running at port : " + PORT));  
-
-
+startServer();
