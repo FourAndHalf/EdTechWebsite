@@ -10168,3 +10168,7 @@ body {
     background-color: #4caf50;
     color: white;
   }
+  
+  #photo {
+    margin-bottom: 10px;
+  }

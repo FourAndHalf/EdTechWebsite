@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react'
 
 const AddBlog = () => {
+    const [uploadPreview, setUploadPreview] = useState(null);
+
+    const handlePhotoUpload = (event) => {
+        const file = event.target.files[0];
+        setBlogData({...blogData, photo: file});
+        setUploadPreview(URL.createObjectURL(file));
+    }
+   
     const [blogData, setBlogData] = useState({
         author: "",
         email: "",
         date: "",
         keyword: "",
-        image: "",
+        photo: null,
         heading: "",
         desc: ""
     })
@@ -161,6 +169,22 @@ const AddBlog = () => {
                                 value={blogData.heading}
                                 required
                             />
+                        </div>
+
+                        <div className="formbold-mb-3">
+                            <label className="formbold-form-label">
+                                Photo
+                            </label>
+                            <input
+                                type="file"
+                                accept='image/*'
+                                name="photo"
+                                id="photo"
+                                className="formbold-form-input"
+                                onChange={handlePhotoUpload}
+                                required
+                            />
+                            {uploadPreview && <img src={uploadPreview} alt='Preview' height="250 px" />}
                         </div>
 
                         <div className="formbold-mb-3">
