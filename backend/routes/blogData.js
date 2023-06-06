@@ -6,6 +6,9 @@ dotenv.config();
 
 const router = express.Router();
 
+router.route('/').get(async (req, res) => {
+    res.status(200).json({ message: 'Blog Data' });
+})
 
 router.route('/').post(async (req, res) => {
     try {
@@ -16,7 +19,7 @@ router.route('/').post(async (req, res) => {
         res.status(200).json({ message: 'Blog Saved' });
     } catch (error) {
         console.error(error);
-        res.status(500).send(error?.response.data.error.message || 'Something went wrong');
+        res.status(500).send('Something went wrong');
     }
 })
 
@@ -32,7 +35,7 @@ router.route('/').post(async (req, res) => {
 //         })
         
         
-//         // const blog = await blogData.find({name: {$regex : search, $options : 'i'}})
+        //    const blog = await blogData.find({name: {$regex : search, $options : 'i'}})
 //         if (blog.length >0) {
 //             res.status(200).json(blog)
 //           } else {

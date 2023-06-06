@@ -1,25 +1,49 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+// import Storage from '@google-cloud/storage';
 
 const AddBlog = () => {
-    const [uploadPreview, setUploadPreview] = useState(null);
+    // const[uploadPreview, setUploadPreview] = useState(null);
 
-    const handlePhotoUpload = (event) => {
-        const file = event.target.files[0];
-        setBlogData({...blogData, photo: file});
-        setUploadPreview(URL.createObjectURL(file));
-    }
-   
+    // const handlePhotoUpload = (event) => {
+    //     const file = event.target.files[0];
+    //     setUploadPreview(URL.createObjectURL(file));
+
+    //     const storage = new Storage();
+    //     const bucketName = 'eduzell-blog-images';
+          
+    //     const bucket = storage.bucket(bucketName);
+    //     const fileUpload = bucket.file(file.name);
+          
+    //     const stream = fileUpload.createWriteStream({
+    //         metadata: {
+    //         contentType: file.type,
+    //         },
+    //     });
+          
+    //     stream.on('error', (err) => {
+    //         console.error('Error uploading the file:', err);
+    //     });
+        
+    //     stream.on('finish', () => {
+    //         const photoUrl = `https://storage.googleapis.com/${bucket.name}/${fileUpload.name}`;
+    //         setBlogData({ ...blogData, photo: photoUrl });
+    //     });
+        
+    //     stream.end(file.buffer);
+    // }
+
     const [blogData, setBlogData] = useState({
         author: "",
         email: "",
         date: "",
         keyword: "",
-        photo: null,
         heading: "",
+        // photo: "",
         desc: ""
     })
 
     const createBlog = (event) => {
+        event.preventDefault();
 
         fetch('http://localhost:5000/api/blogPost', {
             method: 'POST',
@@ -32,8 +56,16 @@ const AddBlog = () => {
                 date: blogData.date,
                 keyword: blogData.keyword,
                 heading: blogData.heading,
+                // photo: blogData.photo,
                 content: blogData.desc
             })
+        }) .then ((res) => {
+            if(res.status === 200) {
+                alert("Blog Posted Successfully");
+                window.location.href = "/blog";
+            }
+        }) .catch ((error) => {
+            alert("Error Occured");
         })
     }
 
@@ -171,7 +203,7 @@ const AddBlog = () => {
                             />
                         </div>
 
-                        <div className="formbold-mb-3">
+                        {/* <div className="formbold-mb-3">
                             <label className="formbold-form-label">
                                 Photo
                             </label>
@@ -185,7 +217,7 @@ const AddBlog = () => {
                                 required
                             />
                             {uploadPreview && <img src={uploadPreview} alt='Preview' height="250 px" />}
-                        </div>
+                        </div> */}
 
                         <div className="formbold-mb-3">
                             <label className="formbold-form-label">
