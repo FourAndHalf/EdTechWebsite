@@ -76,8 +76,8 @@ const Blog = () => {
             </div>
         {/* Topbar End */}
 
-        {/* <!-- Navbar Start --> */}
-            <div className="container-fluid">
+        {/* Navbar Start  */}
+        <div className="container-fluid">
                 <div className="row border-top px-xl-5">
                     <div className="col-lg-3 d-none d-lg-block">
                         <a className="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style={{height: '67px', padding: '0 30px'}}>
@@ -103,9 +103,6 @@ const Blog = () => {
                     </div>
                     <div className="col-lg-9">
                         <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-                            <a href="" className="text-decoration-none d-block d-lg-none">
-                                <h1 className="m-0"><span className="text-primary">E</span>COURSES</h1>
-                            </a>
                             <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
@@ -115,13 +112,7 @@ const Blog = () => {
                                     <a href="about" className="nav-item nav-link">About</a>
                                     <a href="course" className="nav-item nav-link">Courses</a>
                                     <a href="teacher" className="nav-item nav-link">Teachers</a>
-                                    <div className="nav-item dropdown">
-                                        <a href="#" className="nav-link dropdown-toggle active" data-toggle="dropdown">Blog</a>
-                                        <div className="dropdown-menu rounded-0 m-0">
-                                            <a href="blog" className="dropdown-item active">Blog Grid</a>
-                                            <a href="single" className="dropdown-item">Blog Detail</a>
-                                        </div>
-                                    </div>
+                                    <a href="blog" className="nav-item nav-link active">Blog</a>
                                     <a href="contact" className="nav-item nav-link">Contact</a>
                                 </div>
                                 <a className="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="/join">Join Now</a>
@@ -130,8 +121,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-        {/* <!-- Navbar End --> */}
-
+        {/* Navbar End */}
 
         {/* <!-- Header Start --> */}
             <div className="container-fluid page-header" style={{marginBottom: '90px'}}>
